@@ -63,7 +63,9 @@ export default function ImageColorUploader  () {
     setIsUploading(true);
 
     try {
-      const response = await axios.post('http://your-backend-endpoint/upload', formData, {
+      const response = await axios.post('https://ecocare-backend.onrender.com/api/user/getDiseaseData', {
+        method:"POST",
+        body:JSON.stringify({color:rgbColor}),
         headers: {
           'Content-Type': 'multipart/form-data',
         },
