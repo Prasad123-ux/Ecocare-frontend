@@ -1,0 +1,57 @@
+.about-section {
+    background: #f9f9f9;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+  }
+  
+  .feature-img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .tech-icon {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.2);
+    color: #ff6600;
+  }
+  
+  .team-section {
+    margin-top: 30px;
+  }
+  
+  .team-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
