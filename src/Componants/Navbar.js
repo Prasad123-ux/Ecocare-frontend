@@ -1,27 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../Assets/Navbar.css"; 
 import { Link } from 'react-router-dom';
 
-export default function Navbar  ()  {
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);  // Toggle the menu open/close state
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <h1>AI Hydrophobic Systems</h1>
       </div>
-      <ul className="navbar-links">
-        <li><Link to="/" >Home</Link></li>
+      <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/aboutSection">About</Link></li>
-        {/* <li><a href="#team">Team</a></li> */}
         <li><Link to="/diseasedetailSection">DiseaseDetails</Link></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div className="navbar-toggle">
+      <div className="navbar-toggle" onClick={handleMenuToggle}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
     </nav>
   );
-};
-
-
+}

@@ -2,7 +2,8 @@
     background: linear-gradient(45deg, #0d7377, #14ffec);
     color: #fff;
     padding: 2rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; 
+    /* margin-top: 20px; */
   }
   
   .footer-content {
