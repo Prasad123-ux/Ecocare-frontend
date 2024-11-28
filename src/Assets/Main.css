@@ -1,0 +1,79 @@
+/* Main.css */
+
+/* General Styles for the Page */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f4f4f; /* Dark teal background */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  /* Project Title Styling */
+  .project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #7FFF00; /* Vibrant green color */
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+    line-height: 1.2;
+  }
+  
+  /* Project Description Styling */
+  .project-description {
+    font-size: 1.2rem;
+    color: #FFD700; /* Golden yellow color */
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  /* Contributors Styling */
+  .contributors {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    animation: fadeInUp 2.5s ease-out;
+    font-style: italic;
+  }
+  
+  /* Scan Button Styling */
+  .scan-button-container {
+    margin-top: 40px;
+  }
+  
+  .scan-button {
+    background-color: #228B22; /* Forest green background */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scan-button:hover {
+    background-color: #7FFF00; /* Highlight color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Animations for Fade-In and Up Effect */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

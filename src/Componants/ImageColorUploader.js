@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+
 import "../Assets/ImageColorUploader.css"
 
 export default function ImageColorUploader  () {
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
   const [selectedColor, setSelectedColor] = useState('');
-  const [isUploading, setIsUploading] = useState(false);
+  const [isUploading, setIsUploading] = useState(false); 
+  const [diseaseData, setDiseaseData] = useState(null);
 
 
   const leafColors = [
@@ -63,7 +64,7 @@ export default function ImageColorUploader  () {
     setIsUploading(true);
 
     try {
-      const response = await fetch(' https://ecocare-backend.onrender.com/api/user/getDiseaseData', {
+      const response = await fetch(' http://localhost:5000/api/user/getDiseaseData', {
         method:"POST",
         body:JSON.stringify({color:rgbColor}),
         headers: {
@@ -71,7 +72,10 @@ export default function ImageColorUploader  () {
         },
       });
       alert('Upload successful!');
-      console.log(response.data);
+      console.log(response.data); 
+      const data = await response.json()
+      console.log(data.data[0])
+      setDiseaseData(data.data[0])
     } catch (error) {
       console.error('Error uploading:', error);
       alert('Error during upload. Please try again.');
@@ -109,7 +113,29 @@ export default function ImageColorUploader  () {
 
       <button className="upload-btn" onClick={handleUpload} disabled={isUploading}>
         {isUploading ? 'Uploading...' : 'Upload'}
-      </button>
+      </button>  
+
+
+      {diseaseData && (
+        <div className="disease-info-container">
+          <h3>Disease Information</h3>
+          <div className="disease-card">
+            <h4>{diseaseData.disease}</h4>
+            <p><strong>Symptoms:</strong> {diseaseData.symptoms}</p>
+            <p><strong>Solution:</strong> {diseaseData.solution}</p>
+            <p><strong>Is Edible:</strong> {diseaseData.isEdible ? 'Yes' : 'No'}</p>
+
+            <div className="affected-plants">
+              <h5>Affected Plants:</h5>
+              <ul>
+                {diseaseData.affectedPlants.map((plant, index) => (
+                  <li key={index}>{plant}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
