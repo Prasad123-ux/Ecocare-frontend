@@ -64,7 +64,7 @@ export default function ImageColorUploader  () {
     setIsUploading(true);
 
     try {
-      const response = await fetch(' http://localhost:5000/api/user/getDiseaseData', {
+      const response = await fetch(' https://ecocare-backend.onrender.com/api/user/getDiseaseData', {
         method:"POST",
         body:JSON.stringify({color:rgbColor}),
         headers: {
