@@ -19,7 +19,7 @@ export default function Main() {
         <p className="contributors">
           Presented by: Sakshi Sonawane 
 , sneha thote 
-, purvja patil 
+, purvaja patil 
 , Rani pimple 
 , jayshree rathod
         </p>
