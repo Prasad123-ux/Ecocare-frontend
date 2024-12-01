@@ -6,6 +6,7 @@ import Footer from './Componants/Footer'
 import Navbar from './Componants/Navbar'
 import AboutSection from './Componants/AboutSection'
 import DiseaseDetailsSection from './Componants/DiseaseDetaillSection'
+import DocumentationSection from './Componants/DocumentationSection'
 
 
 export default function App() {
@@ -19,6 +20,9 @@ export default function App() {
         <Route exact path="/scanImage" element={<ImageColorUploader/>}/>
         <Route exact path="/aboutSection" element={<AboutSection/>}></Route>
         <Route exact path="/diseasedetailsection" element={<DiseaseDetailsSection/>}/>
+        <Route exact path="/documentationSection" element={<DocumentationSection/>}/>
+
+
 
 
         {/* </Route> */}

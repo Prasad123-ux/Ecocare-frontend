@@ -70,7 +70,7 @@ export default function AboutSection  ()  {
               <p>UI/UX Designer</p>
             </div>
             <div className="col-md-4">
-              <p><strong>Purvja Patil</strong></p>
+              <p><strong>Purvaja Patil</strong></p>
               <p>Backend Developer</p>
             </div>
             <div className="col-md-4">

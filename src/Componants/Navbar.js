@@ -18,7 +18,7 @@ export default function Navbar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/aboutSection">About</Link></li>
         <li><Link to="/diseasedetailSection">DiseaseDetails</Link></li>
-        <li><a href="#contact">Contact</a></li> 
+        <li><Link to="/documentationSection">Documentation</Link></li> 
         <li><Link to="/scanImage">Scan Image</Link></li>
       </ul>
       <div className="navbar-toggle" onClick={handleMenuToggle}>

@@ -27,7 +27,7 @@ export default function Footer  ()  {
             </li>
             <li>
               <a href="https://www.linkedin.com/in/purvja-patil" target="_blank" rel="noopener noreferrer">
-                Purvja Patil
+              Purvaja  Patil
               </a>
             </li>
             <li>
