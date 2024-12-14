@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h1>AI Hydrophobic Systems</h1>
+        <h1>AI hydroponic  Systems</h1>
       </div>
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/">Home</Link></li>

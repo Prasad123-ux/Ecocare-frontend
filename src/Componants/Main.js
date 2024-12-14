@@ -10,7 +10,7 @@ export default function Main() {
 <div className="main-container">
       <div className="main-content">
         <h1 className="project-title">
-          Welcome to AI Hydrophobic Systems <br />
+          Welcome to AI hydroponic  Systems <br />
           Your Eco-friendly Solution
         </h1>
         <p className="project-description">

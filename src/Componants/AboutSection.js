@@ -12,7 +12,7 @@ export default function AboutSection  ()  {
       <div className="container">
         <h2 className="text-center mb-4">About Our Project</h2>
         <p className="text-center lead mb-5">
-          <strong>"Application of AI in Hydrophobic Systems"</strong> leverages cutting-edge AI technologies to optimize and analyze hydrophobic systems, advancing innovations and improving system efficiency.
+          <strong>"Application of AI in hydroponic  Systems"</strong> leverages cutting-edge AI technologies to optimize and analyze hydroponic  systems, advancing innovations and improving system efficiency.
         </p>
 
         {/* Features Section */}
@@ -20,7 +20,7 @@ export default function AboutSection  ()  {
           <div className="col-md-6">
             <h3>Key Features</h3>
             <ul>
-              <li>AI-driven prediction for hydrophobic system behaviors.</li>
+              <li>AI-driven prediction for hydroponic  system behaviors.</li>
               <li>Real-time analysis and optimization capabilities.</li>
               <li>Interactive and advanced visualization tools.</li>
             </ul>

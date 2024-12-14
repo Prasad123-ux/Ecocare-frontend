@@ -14,7 +14,7 @@ export default function DocumentationSection() {
       <section className="overview">
         <h2>Overview</h2>
         <p>
-          <strong>Application of AI in Hydrophobic Systems</strong> aims to enhance agriculture by 
+          <strong>Application of AI in hydroponic  Systems</strong> aims to enhance agriculture by 
           identifying and addressing plant diseases efficiently using technology. 
           This platform combines AI, intuitive design, and robust database management 
           to deliver a seamless experience for users.
